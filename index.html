@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Git Started With VCS</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/grayscale.css" rel="stylesheet">
+  <link href="css/prism.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Hour of Git</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#download">Download</a>
+          </li>
+          <!-- li class="nav-item">
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+              Dropdown button
+            </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#" style="color:black;">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+          </li -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Intro Header -->
+  <header class="masthead">
+    <div class="intro-body">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h1 class="brand-heading text-capitalize" style="letter-spacing:10px;">ABCi</h1>
+            <p class="intro-text">A Git Workshop
+              <br>by Barnabas Nomo.</p>
+            <a href="#about" class="btn btn-circle js-scroll-trigger">
+                <i class="fa fa-angle-double-down animated"></i>
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="content-section text-left">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2 class="text-center">What is so great about this oddly named tool?</h2>
+
+          <p>Since its creation, Git has become an immensely popular Distributed Source Control System. It allows you to track
+            changes in your files while simplifying collaborative work on files and projects both for individuals and companies.</p>
+
+          <p>People often confuse Git and GitHub, but they are quite different things. Github is a centralized cloud server
+            that allows you to store your code in repositories. It also allows you to interact with other developers on Open
+            Source Projects.</p>
+          <blockquote>The main focus of this lesson is to not only give you a proper foundation in Git, but also to serve as an inspiration
+            for further learning. By the end of this session, we should be able to push a simple hangman python sketch to
+            github from our computer terminal.</blockquote>
+          <small>Now that we know a basic concept of Git, lets move on to the next part: Installing Git</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="download" class="download-section content-section text-center">
+    <div class="container">
+      <div class="col-lg-8 mx-auto">
+        <h2>Download Resources</h2>
+        <a href="https://git-for-windows.github.io/" class="btn btn-dark btn-lg" target="_blank"><i class="fa fa-windows"></i> Windows</a>
+        <a class="btn btn-light btn-lg" href="https://sourceforge.net/projects/git-osx-installer/files/" style="letter-spacing:5px;"
+          target="_blank"><i class="fa fa-apple"></i> Mac OSX</a>
+        <a class="btn btn-primary btn-lg" href="hangman.zip" download><i class="fa fa-download"> </i> Hangman</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="installing-git" class="content-section text-left">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2 class="text-center">Installing Git</h2>
+
+          <p class="text-left">Unless you are a windows user, getting git setup on your device is very easy from the command line:</p>
+          <h4 class="text-left" style="margin-bottom:3px;">Linux</h4>
+          <pre class="language-bash line-highlight"><code>sudo apt-get install git</code></pre>
+          <br>
+
+          <div class="clearfix"></div>
+          <h4 class="text-left" style="margin-bottom:3px;">Mac</h2>
+            <pre class="language-bash line-highlight"><code>git version</code></pre>
+            <p>you will get the option to download x code or to just install git, for now, let's just install git. Go ahead
+              and click the install button</p>
+            <aside>
+              <h5>Why the Command Line?</h3>
+                <p>We're in 2017, aren't there many GUI tools available for git?<b class="text-warning lead"> Given the strong history between the command line and git,</b></p>
+                <ul style="color:black;" class="list-group">
+                  <li class="list-group-item">Newer features are made available faster to the command line. Nice try gui <i class="fa fa-smile-o"></i></li>
+                  <li class="list-group-item">Most online resources/ tutorials deal with the command line anyways.</li>
+                  <li class="list-group-item">Power! <i class="fa fa-2x fa-bolt text-danger"></i></li>
+                  <li class="list-group-item">Consistency across devices</li>
+                </ul>
+            </aside>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- About Section -->
+  <section id="github" class="content-section text-left">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2 class="text-center">Github</h2>
+          <ul class="list-group" style="color:black;">
+            <li class="list-group-item">Go to <a href="https://github.com">https://github.com</a> and create an account. You may be required to activate
+              your account afterwards. <small>If you already have an account on Github, you may skip this step.</small>
+            </li>
+            <li class="list-group-item">Next, lets create a repository on <a href="https://github.com">Github</a>.
+              <span>A repository is a folder on the cloud in which your project is hosted</span>
+            </li>
+            <li class="list-group-item">Give your repository a suitable name. <em><code>python-hangman</code></em> seems decent enough
+            </li>
+            <li class="list-group-item">Next, you can provide an optional description
+            </li>
+          </ul>
+          <h1></h1>
+          <br>
+          <hr>
+          <div class="clearfix"></div>
+          <h4 style="margin-bottom:6px; text-decoration:underline;">Git Config</h5>
+            <p style="margin-top:3px;">Now that we have an Account on Github lets update our credentials in the command line locally. To do that, we
+              use the <code>git config</code> command for that. We want these configurations to be saved on our computer
+              so that we don't have to set it up everytime we want to use git. So we'll pass it the <code>--global</code>              option.</p>
+            <pre class="language-bash"><code>git config --global user.name "yourUserNameHere"</code></pre>
+            <p>This command will set your username gobally. Next, let's setup our email globally too.
+              <pre class="language-bash"><code>git config --global user.email your@email.com</code></pre>
+            </p>
+
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center">
+      <p>Freeware | Barnabas Nomo 2017</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/popper/popper.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/grayscale.min.js"></script>
+  <script src="js/prism.js"></script>
+
+</body>
+
+</html>
